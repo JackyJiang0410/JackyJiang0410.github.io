@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} | {{ site.affiliation }}</title><meta name="description" content="{{ site.description }}"><meta name="keywords" content="{{ site.keywords }}"><link rel="canonical" href="{{ site.canonical }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/minimal-light.css">
+</head>
+<body><div class="wrapper"><header>
+  <a class="image avatar"><img src="{{ site.avatar }}" alt="Portrait of {{ site.title }}"></a><h1>{{ site.title }}</h1><p class="position">{{ site.position }}</p><a class="affiliation" href="{{ site.affiliation_link }}" rel="noopener">{{ site.affiliation }}</a><p class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <div class="social-icons">{% if site.github_link %}<a href="{{ site.github_link }}" aria-label="GitHub"><i class="fab fa-github"></i></a>{% endif %}{% if site.cv_link %}<a href="{{ site.cv_link }}" aria-label="Curriculum Vitae"><i class="ai ai-cv"></i></a>{% endif %}</div>
+  <nav aria-label="Primary navigation"><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a><a href="/publications/"{% if page.url == "/publications/" %} class="active"{% endif %}>Publications</a><a href="/projects/"{% if page.url == "/projects/" %} class="active"{% endif %}>Projects</a><a href="/hobbies/"{% if page.url == "/hobbies/" %} class="active"{% endif %}>Beyond Research</a><a href="/cv/"{% if page.url == "/cv/" %} class="active"{% endif %}>CV</a></nav>
+</header><main>{% if page.title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}{{ content }}{% if site.enable_footnote %}<p class="footnote">Powered by <a href="https://jekyllrb.com/">Jekyll</a> and the <a href="https://github.com/harryrichman/minimal-light-academic">Minimal Light Academic</a> theme.</p>{% endif %}</main></div></body>
+</html>

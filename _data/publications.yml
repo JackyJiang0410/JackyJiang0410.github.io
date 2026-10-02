@@ -1,0 +1,16 @@
+main:
+  - title: "Open-World Continuous Human Activity Recognition with Novel Class Discovery"
+    authors: "Jacky Hao Jiang et al."
+    journal: "Proceedings of the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems"
+    year: 2026
+    link: https://dl.acm.org/doi/10.1145/3842436.3843804
+  - title: "Unveiling Hidden Pivotal Players with GoalNet: A GNN-Based Soccer Player Evaluation System"
+    authors: "Jacky Hao Jiang, Jerry Cai, and Anastasios Kyrillidis"
+    journal: arXiv preprint
+    year: 2025
+    arxiv: https://arxiv.org/abs/2503.09737
+  - title: "SeamFit: Towards Practical Smart Clothing for Automatic Exercise Logging"
+    authors: "Tianhong Catherine Yu, Manru Mary Zhang, Luis Miguel Malenab, Chi-Jung Lee, Jacky Hao Jiang, Ruidong Zhang, François Guimbretière, and Cheng Zhang"
+    journal: "IMWUT / UbiComp"
+    year: 2025
+    link: https://dl.acm.org/doi/10.1145/3712287

@@ -39,3 +39,73 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Personal site components */
+:root { --hj-accent: #9d4700; --hj-ink: #20252b; --hj-muted: #697078; --hj-border: #e5e7eb; }
+body { color: var(--hj-ink); }
+#main { margin-top: 2.5rem; }
+.page__title { color: var(--hj-ink); font-size: 1.7rem; letter-spacing: -0.025em; }
+.page__content { line-height: 1.65; }
+.page__content a:not(.btn) { color: var(--hj-accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.action-row { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0 2rem; }
+.btn--primary { background: var(--hj-accent); }
+.btn--primary:hover { background: #9d4700; }
+.feature-grid, .project-grid, .hobby-grid, .research-list { display: block; margin: .75rem 0 2rem; }
+.feature-card, .project-card, .hobby-card, .research-card, .timeline-item { border: 0; border-bottom: 1px solid var(--hj-border); border-radius: 0; background: transparent; padding: 1.25rem 0; box-shadow: none; }
+.feature-card:first-child, .project-card:first-child, .hobby-card:first-child, .research-card:first-child { border-top: 1px solid var(--hj-border); }
+.feature-card h3, .project-card h2, .hobby-card h2, .research-card h2, .timeline-item h2 { margin: .25rem 0 .6rem; color: var(--hj-ink); }
+.eyebrow, .timeline-date { color: var(--hj-accent); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.research-list, .timeline { margin: .75rem 0 2rem; }
+.research-meta { display: flex; align-items: center; gap: .75rem; color: var(--hj-muted); font-size: .8rem; }
+.status { border-radius: 999px; padding: .22rem .55rem; font-size: .68rem; font-weight: 700; text-transform: uppercase; }
+.status.published { color: #166534; background: #dcfce7; }
+.status.preprint { color: #1d4ed8; background: #dbeafe; }
+.authors, .role { color: var(--hj-muted); }
+.tag-row, .metric-row { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1rem 0; }
+.tag-row span { color: var(--hj-muted); border-right: 1px solid var(--hj-border); padding: 0 .55rem 0 0; font-size: .72rem; }
+.tag-row span:last-child { border-right: 0; }
+.metric-row span { flex: 1 1 9rem; border-left: 2px solid var(--hj-border); padding: .2rem .65rem; font-size: .76rem; }
+.metric-row strong { display: block; color: var(--hj-accent); font-size: 1.15rem; }
+.timeline { border-left: 2px solid var(--hj-border); padding-left: 1.25rem; }
+.timeline-item { position: relative; }
+.timeline-item:before { content: ""; position: absolute; left: -1.72rem; top: 1.4rem; width: .8rem; height: .8rem; border-radius: 50%; background: var(--hj-accent); border: 3px solid #fff; }
+.hobby-icon { font-size: 2rem; }
+.author__avatar img { aspect-ratio: 1; object-fit: cover; object-position: 50% 38%; }
+.cv-frame { overflow: hidden; border: 1px solid var(--hj-border); border-radius: 12px; height: 75vh; }
+.cv-frame object { width: 100%; height: 100%; }
+@media (max-width: 700px) { .cv-frame { height: 65vh; } }
+
+/* Compact, text-first lists inspired by classic academic homepages. */
+.compact-list { margin: .8rem 0 2.5rem; }
+.compact-row {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 1.4rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--hj-border);
+}
+.compact-row:first-child { border-top: 1px solid var(--hj-border); }
+.compact-row h2, .compact-row h3 { margin: 0 0 .35rem; font-size: 1.08rem; }
+.compact-row p { margin: .3rem 0; }
+.row-year { color: var(--hj-muted); font-size: .75rem; font-weight: 650; letter-spacing: .025em; text-transform: uppercase; }
+.paper-links { color: var(--hj-muted); font-size: .82rem; }
+.research-row .research-meta { margin-bottom: .4rem; }
+.research-row .authors { font-size: .88rem; }
+.honors-list .compact-row { padding: 1rem 0; }
+.profile-photo {
+  float: right;
+  width: 240px;
+  height: 300px;
+  margin: 0 0 1.25rem 2rem;
+  object-fit: cover;
+  object-position: 50% 48%;
+}
+
+@media (min-width: 1024px) {
+  .page { width: 82%; padding-left: 0; padding-right: 0; }
+}
+@media (max-width: 700px) {
+  .compact-row { grid-template-columns: 1fr; gap: .35rem; }
+  .page__title { font-size: 1.5rem; }
+  .profile-photo { float: none; width: 180px; height: 225px; margin: 0 0 1.25rem; }
+}

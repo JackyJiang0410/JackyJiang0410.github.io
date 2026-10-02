@@ -1,0 +1,116 @@
+\documentclass{resume}
+\usepackage{fontawesome}
+\usepackage[left=0.4in,top=0.7in,right=0.4in,bottom=0.7in]{geometry}
+\geometry{a4paper}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\setlist[itemize]{topsep=-20pt}
+\BeforeBeginEnvironment{rSection}{\vspace{-0.25em}}
+\AfterEndEnvironment{rSection}{\vspace{-0.25em}}
+
+\name{Hao Jacky Jiang}
+\address{+1 (281)-844-6606 \\
+\href{mailto:Jackyjiang@utexas.edu}{Jackyjiang@utexas.edu} \\
+\href{https://github.com/JackyJiang0410}{@JackyJiang0410} \faGithub \quad
+\href{https://jackyjiang0410.github.io}{jackyjiang0410.github.io}}
+
+\begin{document}
+
+\begin{rSection}{Education}
+\textbf{The University of Texas at Austin}\hfill Austin, TX\\
+\textit{Ph.D. in Electrical and Computer Engineering}\hfill Aug. 2025 -- Present\\
+Human Signals Lab; Advisor: \href{https://users.ece.utexas.edu/~ethomaz/}{Dr. Edison Thomaz}\\
+Research focus: wearable sensing, machine learning, human activity recognition, and sports analytics\\
+\textbf{Cockrell School of Engineering Fellowship}\\[2pt]
+\textbf{Rice University}\hfill Houston, TX\\
+\textit{B.S. in Computer Science; B.A. in Sport Analytics}\hfill Aug. 2021 -- May 2025\\
+\textbf{Major GPA:} 3.82/4.00 \quad \textbf{Distinction in Research and Creative Work}
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+\vspace{-1.25em}
+\item \textbf{Open-World Continuous Human Activity Recognition with Novel Class Discovery}\hfill Austin, TX\\
+\textit{Researcher, Human Signals Lab, UT Austin; Advisor: \href{https://users.ece.utexas.edu/~ethomaz/}{Dr. Edison Thomaz}}\hfill 2025 -- Present
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Investigate continuous human activity-recognition systems that can identify and incorporate novel activity classes beyond fixed closed-set assumptions.
+\item Developed research leading to \href{https://dl.acm.org/doi/10.1145/3842436.3843804}{\textit{Open-World Continuous Human Activity Recognition with Novel Class Discovery}}.
+\end{itemize}
+
+\item \textbf{Wearable Sensor System for Motion Data Collection and Exercise Classification}\hfill Ithaca, NY\\
+\textit{Research Assistant, SciFi Lab, Cornell University; Advisor: \href{https://czhang.org/}{Dr. Cheng Zhang}}\hfill Apr. 2024 -- Present
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Designed a wearable system using sensors embedded in clothing seams to collect multi-channel motion data during exercise.
+\item Implemented a CNN--LSTM pipeline for exercise classification, achieving over 92\% cross-user accuracy.
+\item Used Dynamic Time Warping to count repetitions with less than 10\% error and generate post-exercise summaries.
+\item Contributed to \href{https://dl.acm.org/doi/10.1145/3712287}{\textit{SeamFit: Towards Practical Smart Clothing for Automatic Exercise Logging}}.
+\end{itemize}
+
+\item \textbf{Wearable Multimodal System for Exercise Recognition}\hfill Ithaca, NY\\
+\textit{Research Assistant, SciFi Lab, Cornell University; Advisor: \href{https://czhang.org/}{Dr. Cheng Zhang}}\hfill May 2024 -- Present
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Developed a wearable system combining acoustic sensing in glasses and an IMU wristband for real-time exercise recognition.
+\item Processed and synchronized acoustic and IMU streams; implemented Transformer models with over 85\% cross-user accuracy.
+\end{itemize}
+
+\item \textbf{GoalNet: A GNN-Based Soccer Player Evaluation System}\hfill Houston, TX\\
+\textit{Lead Researcher, Rice University; Advisor: \href{https://akyrillidis.github.io/about/}{Dr. Anastasios Kyrillidis}}\hfill Aug. 2024 -- Present
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Designed a graph neural-network framework that represents soccer events as spatial-temporal graphs to evaluate player contributions.
+\item Built a dynamic attribution system for changes in Expected Threat, surfacing pivotal defensive, transitional, and ball-retaining contributions.
+\item Validated the framework through match-data analysis; research paper: \href{https://arxiv.org/abs/2503.09737}{\textit{Unveiling Hidden Pivotal Players with GoalNet}}.
+\end{itemize}
+
+\item \textbf{Context-Aware Citation Recommendation with BERT and GCN}\hfill Houston, TX\\
+\textit{Research Assistant, D2K Lab, Rice University; Advisor: \href{https://abarman.rice.edu/}{Dr. Arko Barman}}\hfill Jan. 2024 -- Jun. 2024
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Converted the PeerRead dataset to HTML using arXiv Vanity and analyzed citation context for model development.
+\item Combined BERT and graph convolutional networks to develop context-aware citation recommendations.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Publications and Presentations}
+\begin{enumerate}
+\itemsep -6pt
+\item \textbf{Jiang, J. H.}, Thomaz, E. \href{https://dl.acm.org/doi/10.1145/3842436.3843804}{Open-World Continuous Human Activity Recognition with Novel Class Discovery}. \textit{Proceedings of the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems}, 2026.
+\item \textbf{Jiang, J. H.}, Cai, J., Kyrillidis, A. \href{https://arxiv.org/abs/2503.09737}{Unveiling Hidden Pivotal Players with GoalNet: A GNN-Based Soccer Player Evaluation System}. \textit{arXiv preprint}, 2025.
+\item Yu, T. C., Zhang, M., Malenab, L. M., Lee, C. J., \textbf{Jiang, J. H.}, Zhang, R., Guimbreti\`ere, F., Zhang, C. \href{https://dl.acm.org/doi/10.1145/3712287}{SeamFit: Towards Practical Smart Clothing for Automatic Exercise Logging}. \textit{Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT / UbiComp)}, 2025.
+\item \textbf{Jiang, H.}, Cai, J. Advancing Counterattack Prediction in Soccer through Gender-Specific Graph Neural Networks. \textit{Carnegie Mellon Sports Analytics Conference (CMSAC)}, 2024. Second Place.
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{Internship Experience}
+\vspace{-1.25em}
+\item \textbf{D.C. United} $|$ \textit{Software Development Engineer Intern}\hfill May 2024 -- Aug. 2024
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Contributed to a comprehensive scouting application, increasing the number of scouted players by 20\%.
+\item Engineered automated match-report generation, reducing post-match analysis time by 40\%.
+\item Built a system to match player identities and data across soccer websites, improving data consistency.
+\end{itemize}
+\item \textbf{Petkeley AI Innovations} $|$ \textit{Machine Learning Engineer Intern}\hfill Dec. 2023 -- Jun. 2024
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Developed matching and recommendation algorithms for virtual-pet social interactions and personalized feeds.
+\item Improved the matching system, contributing to a 30\% increase in successful connections.
+\end{itemize}
+\item \textbf{ArtConnect} $|$ \textit{Machine Learning Engineer Intern}\hfill Nov. 2023 -- May 2024
+\begin{itemize}[leftmargin=0.15in]
+\itemsep -6pt
+\item Built a user-content recommendation system and a two-tower model that improved recommendation accuracy by 22\%.
+\item Used large language models for feature extraction to better predict artists' needs.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Skills}
+\textbf{Programming:} Python, Java, JavaScript, SQL, R, HTML/CSS\\
+\textbf{Machine Learning:} PyTorch, TensorFlow, scikit-learn, Hugging Face, Transformers, graph neural networks\\
+\textbf{Data and Developer Tools:} GitHub, Docker, Jupyter Notebook, Linux, NumPy, Pandas, Matplotlib, Weights \& Biases, TensorBoard\\
+\textbf{Web and Cloud:} React, Node.js, MongoDB, Google Cloud Platform, Cloudinary
+\end{rSection}
+\end{document}
