@@ -1,10 +1,9 @@
 ---
 layout: homepage
+title: "About Me"
 ---
 
-## About Me
-
-I am a Ph.D. student in Electrical and Computer Engineering at **The University of Texas at Austin**, advised by Dr. Edison Thomaz in the Human Signals Lab.
+I am a Ph.D. student in Electrical and Computer Engineering at **The University of Texas at Austin**, advised by [Dr. Edison Thomaz](https://users.ece.utexas.edu/~ethomaz/) in the Human Signals Lab.
 
 My research lies at the intersection of **wearable sensing, machine learning, human activity recognition, and sports analytics**. I build intelligent systems that transform multimodal sensor and event data into practical insights about human movement, exercise, and athletic performance.
 
@@ -34,7 +33,7 @@ An experimental codebase for exploring World Cup data and finding analytical edg
 ## Education
 
 **The University of Texas at Austin** · 2025–Present  
-Ph.D. in Electrical and Computer Engineering · Human Signals Lab · Advisor: Dr. Edison Thomaz
+Ph.D. in Electrical and Computer Engineering · Human Signals Lab · Advisor: [Dr. Edison Thomaz](https://users.ece.utexas.edu/~ethomaz/)
 
 **Rice University** · 2021–2025  
 B.S. in Computer Science · B.A. in Sport Analytics · Major GPA: 3.82/4.00
